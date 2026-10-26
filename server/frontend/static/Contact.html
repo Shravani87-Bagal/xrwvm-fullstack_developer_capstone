@@ -1,1 +1,135 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Dealerships</title>
+
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+  <link rel="stylesheet" href="/static/style.css">
+
+  <style>
+    body {
+      background-color: #f5f8fa;
+      font-family: Arial, sans-serif;
+    }
+
+    .contact-banner {
+      background-color: #e0f7f7;
+      text-align: center;
+      padding: 30px 15px;
+      border-radius: 8px;
+      margin-bottom: 30px;
+    }
+
+    .contact-card {
+      border: none;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      height: 100%;
+    }
+
+    .contact-image {
+      width: 100%;
+      max-height: 320px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .contact-label {
+      font-weight: bold;
+      color: #087f8c;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light"
+       style="background-color: darkturquoise; min-height: 85px;">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="/">Dealerships</a>
+
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarText"
+              aria-controls="navbarText"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/contact">
+              Contact Us
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-4 py-md-5">
+    <section class="contact-banner">
+      <h1 class="display-5 fw-bold">Contact Us</h1>
+      <p class="lead mb-0">
+        We're here to help you with your dealership questions.
+      </p>
+    </section>
+
+    <div class="row g-4 align-items-center">
+      <div class="col-12 col-md-6">
+        <img
+          src="/static/contactus.png"
+          alt="Contact our dealership support team"
+          class="contact-image"
+        >
+      </div>
+
+      <div class="col-12 col-md-6">
+        <div class="card contact-card">
+          <div class="card-body p-4">
+            <h2 class="h3 mb-4">Get in Touch</h2>
+
+            <p>
+              Have questions about a dealership or need help using our
+              website? Contact our support team.
+            </p>
+
+            <p>
+              <span class="contact-label">Email:</span><br>
+              <a href="mailto:support@example.com">support@example.com</a>
+            </p>
+
+            <p>
+              <span class="contact-label">Phone:</span><br>
+              <a href="tel:+18005550100">+1 (800) 555-0100</a>
+            </p>
+
+            <p>
+              <span class="contact-label">Office:</span><br>
+              Dealership Customer Support<br>
+              United States
+            </p>
+
+            <p class="mb-0">
+              <span class="contact-label">Business Hours:</span><br>
+              Monday–Friday, 9:00 AM–5:00 PM
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="/static/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
